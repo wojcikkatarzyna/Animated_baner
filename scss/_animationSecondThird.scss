@@ -57,6 +57,24 @@
   }
 }
 
+@keyframes fourthSign {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fourthSignOpposite {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 div.line1{
   .name{
     animation-name: secondText;
@@ -65,10 +83,10 @@ div.line1{
     animation-fill-mode: forwards;
   }
   .sign{
-    animation-name: secondSign, thirdLine1;
-    animation-duration: 2s, 5ms;
-    animation-delay: 14s, 22s;
-    animation-fill-mode: forwards, forwards;
+    animation-name: secondSign, thirdLine1, fourthSignOpposite;
+    animation-duration: 2s, 5ms, 3s;
+    animation-delay: 14s, 22s, 27s;
+    animation-fill-mode: forwards;
   }
 }
 
@@ -81,9 +99,9 @@ div.line2{
     animation-fill-mode: forwards;
   }
   .sign{
-    animation-name: secondSign, thirdLine2;
-    animation-duration: 2s, 5ms;
-    animation-delay: 16s, 23s;
+    animation-name: secondSign, thirdLine2, fourthSign;
+    animation-duration: 2s, 5ms, 3s;
+    animation-delay: 16s, 23s, 29s;
     animation-fill-mode: forwards;
   }
 }
@@ -96,9 +114,9 @@ div.line3{
     animation-fill-mode: forwards;
   }
   .sign{
-    animation-name: secondSign, thirdLine3;
-    animation-duration: 2s, 5ms;
-    animation-delay: 18s, 24s;
+    animation-name: secondSign, thirdLine3, fourthSignOpposite;
+    animation-duration: 2s, 5ms, 3s;
+    animation-delay: 18s, 24s, 32s;
     animation-fill-mode: forwards;
   }
 }
@@ -111,9 +129,9 @@ div.line4{
     animation-fill-mode: forwards;
   }
   .sign{
-    animation-name: secondSign, thirdLine4;
-    animation-duration: 2s, 5ms;
-    animation-delay: 20s, 25s;
+    animation-name: secondSign, thirdLine4, fourthSign;
+    animation-duration: 2s, 5ms, 3s;
+    animation-delay: 20s, 25s, 36s;
     animation-fill-mode: forwards;
   }
 }
