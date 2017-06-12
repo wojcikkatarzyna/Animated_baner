@@ -3,9 +3,17 @@
     top: -150px;
     left: 0;
   }
-  100% {
+  10% {
     top: 0;
     left: 0;
+  }
+  90% {
+    top: 0;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: -250px;
   }
 }
 
@@ -14,9 +22,17 @@
     top: -150px;
     left: 0;
   }
-  100% {
+  10% {
     top: 150px;
     left: 0;
+  }
+  90% {
+    top: 150px;
+    left: 0;
+  }
+  100% {
+    top: 150px;
+    left: 175px;
   }
 }
 
@@ -25,9 +41,17 @@
     top: -150px;
     left: 0;
   }
-  100% {
+  10% {
     top: 300px;
     left: 0;
+  }
+  90% {
+    top: 300px;
+    left: 0;
+  }
+  100% {
+    top: 300px;
+    left: -250px;
   }
 }
 
@@ -36,35 +60,44 @@
     top: -150px;
     left: 0;
   }
-  100% {
+  10% {
     top: 450px;
     left: 0;
   }
+  90% {
+    top: 450px;
+    left: 0;
+  }
+  100% {
+    top: 450px;
+    left: 175px;
+  }
 }
+
 
 div.line1{
   animation-name: firstLine1;
-  animation-duration: 2s;
+  animation-duration: 30s;
   animation-fill-mode: forwards;
 }
 
 div.line2{
   animation-name: firstLine2;
-  animation-duration: 3s;
+  animation-duration: 30s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 
 div.line3{
   animation-name: firstLine3;
-  animation-duration: 4s;
+  animation-duration: 30s;
   animation-delay: 5s;
   animation-fill-mode: forwards;
 }
 
 div.line4{
   animation-name: firstLine4;
-  animation-duration: 5s;
+  animation-duration: 30s;
   animation-delay: 9s;
   animation-fill-mode: forwards;
 }

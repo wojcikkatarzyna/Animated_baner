@@ -4,7 +4,7 @@
 
   }
   100% {
-    padding-left: 100px;
+    padding-left: 250px;
 
   }
 }
@@ -49,6 +49,9 @@
   0% {
       background-position: 500px 100px;
     }
+  1% {
+      background-position: 500px 200px;
+  }
   100% {
       background-position: 500px 200px;
   }
@@ -63,7 +66,7 @@ div.line1{
   }
   .sign{
     animation-name: secondSign, thirdLine1;
-    animation-duration: 2s, 500ms;
+    animation-duration: 2s, 5ms;
     animation-delay: 14s, 22s;
     animation-fill-mode: forwards, forwards;
   }
@@ -79,7 +82,7 @@ div.line2{
   }
   .sign{
     animation-name: secondSign, thirdLine2;
-    animation-duration: 2s, 500ms;
+    animation-duration: 2s, 5ms;
     animation-delay: 16s, 23s;
     animation-fill-mode: forwards;
   }
@@ -94,7 +97,7 @@ div.line3{
   }
   .sign{
     animation-name: secondSign, thirdLine3;
-    animation-duration: 2s, 500ms;
+    animation-duration: 2s, 5ms;
     animation-delay: 18s, 24s;
     animation-fill-mode: forwards;
   }
@@ -109,7 +112,7 @@ div.line4{
   }
   .sign{
     animation-name: secondSign, thirdLine4;
-    animation-duration: 2s, 500ms;
+    animation-duration: 2s, 5ms;
     animation-delay: 20s, 25s;
     animation-fill-mode: forwards;
   }
