@@ -1,0 +1,116 @@
+@keyframes secondText {
+  0% {
+    padding-left: 400px;
+
+  }
+  100% {
+    padding-left: 100px;
+
+  }
+}
+
+@keyframes secondSign {
+  0% {
+    margin-left: 20px;
+  }
+  100% {
+    margin-left: 250px;
+  }
+}
+
+@keyframes thirdLine1 {
+  0% {
+      background-position: 300px 100px;
+    }
+  100% {
+      background-position: 300px 200px;
+  }
+}
+
+@keyframes thirdLine2 {
+  0% {
+      background-position: 400px 100px;
+    }
+  100% {
+      background-position: 400px 200px;
+  }
+}
+
+@keyframes thirdLine3 {
+  0% {
+      background-position: 600px 100px;
+    }
+  100% {
+      background-position: 600px 200px;
+  }
+}
+
+@keyframes thirdLine4 {
+  0% {
+      background-position: 500px 100px;
+    }
+  100% {
+      background-position: 500px 200px;
+  }
+}
+
+div.line1{
+  .name{
+    animation-name: secondText;
+    animation-duration: 2s;
+    animation-delay: 14s;
+    animation-fill-mode: forwards;
+  }
+  .sign{
+    animation-name: secondSign, thirdLine1;
+    animation-duration: 2s, 500ms;
+    animation-delay: 14s, 22s;
+    animation-fill-mode: forwards, forwards;
+  }
+}
+
+
+div.line2{
+  .name{
+    animation-name: secondText;
+    animation-duration: 2s;
+    animation-delay: 16s;
+    animation-fill-mode: forwards;
+  }
+  .sign{
+    animation-name: secondSign, thirdLine2;
+    animation-duration: 2s, 500ms;
+    animation-delay: 16s, 23s;
+    animation-fill-mode: forwards;
+  }
+}
+
+div.line3{
+  .name{
+    animation-name: secondText;
+    animation-duration: 2s;
+    animation-delay: 18s;
+    animation-fill-mode: forwards;
+  }
+  .sign{
+    animation-name: secondSign, thirdLine3;
+    animation-duration: 2s, 500ms;
+    animation-delay: 18s, 24s;
+    animation-fill-mode: forwards;
+  }
+}
+
+div.line4{
+  .name{
+    animation-name: secondText;
+    animation-duration: 2s;
+    animation-delay: 20s;
+    animation-fill-mode: forwards;
+  }
+  .sign{
+    animation-name: secondSign, thirdLine4;
+    animation-duration: 2s, 500ms;
+    animation-delay: 20s, 25s;
+    animation-fill-mode: forwards;
+  }
+}
