@@ -1,0 +1,45 @@
+@keyframes thirdLine1 {
+  0% {
+    margin-left: 150px;
+    background-position: 300px 100px;
+  }
+  100% {
+    margin-left: 150px;
+    background-position: 300px 200px;
+  }
+}
+
+div.line1{
+  .sign{
+    animation-name: thirdLine1;
+    animation-delay: 23s;
+    animation-fill-mode: forwards;
+  }
+}
+
+div.line2{
+  .sign{
+    animation-name: thirdLine1;
+    animation-delay: 23s;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+}
+
+div.line3{
+  .sign{
+    animation-name: thirdLine1;
+    animation-delay: 24s;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+}
+
+div.line4{
+  .sign{
+    animation-name: thirdLine1;
+    animation-delay: 25s;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+}
