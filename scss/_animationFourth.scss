@@ -1,117 +1,48 @@
-@keyframes firstLine1 {
+@keyframes growing {
   0% {
-    top: -150px;
-    left: 0;
+    font-size: 1px;
   }
   100% {
-    top: 0;
-    left: 0;
+    font-size: 30px;
   }
 }
 
-@keyframes firstLine2 {
+
+
+@keyframes roll {
   0% {
-    top: -150px;
-    left: 0;
+    top: -100px;
+    left: 150px;
+  }
+  50% {
+    top: 275px;
+    left: 150px;
   }
   100% {
-    top: 150px;
-    left: 0;
+    top: 275px;
+    left: calc(50% - 100px);
   }
 }
 
-@keyframes firstLine3 {
+@keyframes rotationX {
   0% {
-    top: -150px;
-    left: 0;
+    transform: rotateX(0deg);
   }
   100% {
-    top: 300px;
-    left: 0;
+    transform: rotateX(360deg);
   }
 }
 
-@keyframes firstLine4 {
-  0% {
-    top: -150px;
-    left: 0;
-  }
-  100% {
-    top: 450px;
-    left: 0;
-  }
-}
-
-// fourth animation
-
-// @keyframes fourthLine1 {
-//   0% {
-//     transform: translateX(0);
-//
-//   }
-//   100% {
-//     transform: translateX(250px);
-//   }
-// }
-
-// @keyframes fourthLine2 {
-//   0% {
-//     top: 150px;
-//     left: 0;
-//   }
-//   100% {
-//     top: 150px;
-//     left: 0;
-//   }
-// }
-//
-// @keyframes fourthLine3 {
-//   0% {
-//     top: 300px;
-//     left: 0;
-//   }
-//   100% {
-//     top: 300px;
-//     left: 0;
-//   }
-// }
-//
-// @keyframes fourthLine4 {
-//   0% {
-//     top: 450px;
-//     left: 0;
-//   }
-//   100% {
-//     top: 450px;
-//     left: 0;
-//   }
-// }
-
-//
-div.line1{
-  animation-name: firstLine1;
-  animation-duration: 2s;
-  animation-delay: 0;
+.scale{
+  animation-name: growing, rotationX;
+  animation-duration: 7s, 5s;
+  animation-delay: 40s, 52s;
   animation-fill-mode: forwards;
 }
 
-div.line2{
-  animation-name: firstLine2;
-  animation-duration: 3s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
-}
-
-div.line3{
-  animation-name: firstLine3;
-  animation-duration: 4s;
-  animation-delay: 5s;
-  animation-fill-mode: forwards;
-}
-
-div.line4{
-  animation-name: firstLine4;
-  animation-duration: 5s;
-  animation-delay: 9s;
+.sweetRoll{
+  animation-name: roll, rotationX;
+  animation-duration: 5s, 5s;
+  animation-delay: 47s, 52s;
   animation-fill-mode: forwards;
 }
