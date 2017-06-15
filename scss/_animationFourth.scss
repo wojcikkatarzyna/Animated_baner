@@ -33,16 +33,43 @@
   }
 }
 
+@keyframes textColor {
+  0% {
+    color: rgba(0,0,0,1);
+  }
+  100% {
+    color: rgba(0,0,0,0);
+  }
+}
+
+@keyframes textWidth {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes borderColor {
+  0% {
+    border: 1px solid rgba(0,0,0,1);
+  }
+  100% {
+    border: 1px solid rgba(0,0,0,0);
+  }
+}
+
 .scale{
-  animation-name: growing, rotationX;
-  animation-duration: 7s, 5s;
-  animation-delay: 40s, 52s;
+  animation-name: growing, rotationX, textColor, textWidth;
+  animation-duration: 7s, 5s, 5s, 5s;
+  animation-delay: 40s, 52s, 57s, 57s;
   animation-fill-mode: forwards;
 }
 
 .sweetRoll{
-  animation-name: roll, rotationX;
-  animation-duration: 5s, 5s;
-  animation-delay: 47s, 52s;
+  animation-name: roll, rotationX, textColor, borderColor, textWidth;
+  animation-duration: 5s, 5s, 5s, 5s, 5s;
+  animation-delay: 47s, 52s, 57s, 57s, 57s;
   animation-fill-mode: forwards;
 }
